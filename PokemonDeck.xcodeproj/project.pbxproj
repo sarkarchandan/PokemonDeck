@@ -16,6 +16,7 @@
 		176F2FA21EF5C144007E7A14 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 176F2FA01EF5C144007E7A14 /* music.png */; };
 		176F2FA51EF5C168007E7A14 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 176F2FA31EF5C168007E7A14 /* pokemon.csv */; };
 		176F2FA61EF5C168007E7A14 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 176F2FA41EF5C168007E7A14 /* pokemon.ttf */; };
+		176F2FA91EF5C392007E7A14 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176F2FA81EF5C392007E7A14 /* Pokemon.swift */; };
 		7FB835DCBCBE38A8AC053AC0 /* Pods_PokemonDeck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092C551436F4BAC3B7B7CFC8 /* Pods_PokemonDeck.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		176F2FA01EF5C144007E7A14 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 		176F2FA31EF5C168007E7A14 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		176F2FA41EF5C168007E7A14 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
+		176F2FA81EF5C392007E7A14 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		71EA4A7628354BB3700318A1 /* Pods-PokemonDeck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonDeck.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokemonDeck/Pods-PokemonDeck.release.xcconfig"; sourceTree = "<group>"; };
 		7A4323A9A53ED6C32D88B3AB /* Pods-PokemonDeck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonDeck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokemonDeck/Pods-PokemonDeck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 		176F2F9E1EF5B75E007E7A14 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				176F2FA81EF5C392007E7A14 /* Pokemon.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				176F2F8D1EF5B33A007E7A14 /* MainViewController.swift in Sources */,
 				176F2F8B1EF5B33A007E7A14 /* AppDelegate.swift in Sources */,
+				176F2FA91EF5C392007E7A14 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
