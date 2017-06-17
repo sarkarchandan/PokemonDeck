@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		176F2F8B1EF5B33A007E7A14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176F2F8A1EF5B33A007E7A14 /* AppDelegate.swift */; };
-		176F2F8D1EF5B33A007E7A14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176F2F8C1EF5B33A007E7A14 /* ViewController.swift */; };
+		176F2F8D1EF5B33A007E7A14 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176F2F8C1EF5B33A007E7A14 /* MainViewController.swift */; };
 		176F2F901EF5B33A007E7A14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176F2F8E1EF5B33A007E7A14 /* Main.storyboard */; };
 		176F2F921EF5B33A007E7A14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176F2F911EF5B33A007E7A14 /* Assets.xcassets */; };
 		176F2F951EF5B33A007E7A14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176F2F931EF5B33A007E7A14 /* LaunchScreen.storyboard */; };
+		7FB835DCBCBE38A8AC053AC0 /* Pods_PokemonDeck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092C551436F4BAC3B7B7CFC8 /* Pods_PokemonDeck.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		092C551436F4BAC3B7B7CFC8 /* Pods_PokemonDeck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemonDeck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		176F2F871EF5B339007E7A14 /* PokemonDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		176F2F8A1EF5B33A007E7A14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		176F2F8C1EF5B33A007E7A14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		176F2F8C1EF5B33A007E7A14 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		176F2F8F1EF5B33A007E7A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		176F2F911EF5B33A007E7A14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		176F2F941EF5B33A007E7A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		176F2F961EF5B33A007E7A14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71EA4A7628354BB3700318A1 /* Pods-PokemonDeck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonDeck.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokemonDeck/Pods-PokemonDeck.release.xcconfig"; sourceTree = "<group>"; };
+		7A4323A9A53ED6C32D88B3AB /* Pods-PokemonDeck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonDeck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokemonDeck/Pods-PokemonDeck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FB835DCBCBE38A8AC053AC0 /* Pods_PokemonDeck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				176F2F891EF5B339007E7A14 /* PokemonDeck */,
 				176F2F881EF5B339007E7A14 /* Products */,
+				D43C45E71E97E9D9C959C4AF /* Pods */,
+				B17A4D075D9C172A3294FBD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +61,55 @@
 		176F2F891EF5B339007E7A14 /* PokemonDeck */ = {
 			isa = PBXGroup;
 			children = (
+				176F2F9E1EF5B75E007E7A14 /* Model */,
+				176F2F9D1EF5B758007E7A14 /* View */,
+				176F2F9C1EF5B748007E7A14 /* Controller */,
 				176F2F8A1EF5B33A007E7A14 /* AppDelegate.swift */,
-				176F2F8C1EF5B33A007E7A14 /* ViewController.swift */,
 				176F2F8E1EF5B33A007E7A14 /* Main.storyboard */,
 				176F2F911EF5B33A007E7A14 /* Assets.xcassets */,
 				176F2F931EF5B33A007E7A14 /* LaunchScreen.storyboard */,
 				176F2F961EF5B33A007E7A14 /* Info.plist */,
 			);
 			path = PokemonDeck;
+			sourceTree = "<group>";
+		};
+		176F2F9C1EF5B748007E7A14 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				176F2F8C1EF5B33A007E7A14 /* MainViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		176F2F9D1EF5B758007E7A14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		176F2F9E1EF5B75E007E7A14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B17A4D075D9C172A3294FBD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				092C551436F4BAC3B7B7CFC8 /* Pods_PokemonDeck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D43C45E71E97E9D9C959C4AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A4323A9A53ED6C32D88B3AB /* Pods-PokemonDeck.debug.xcconfig */,
+				71EA4A7628354BB3700318A1 /* Pods-PokemonDeck.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 176F2F991EF5B33A007E7A14 /* Build configuration list for PBXNativeTarget "PokemonDeck" */;
 			buildPhases = (
+				4C5332DCD48A8BA5038F3033 /* [CP] Check Pods Manifest.lock */,
 				176F2F831EF5B339007E7A14 /* Sources */,
 				176F2F841EF5B339007E7A14 /* Frameworks */,
 				176F2F851EF5B339007E7A14 /* Resources */,
+				6E72A1815C3D363AC40AEA1A /* [CP] Embed Pods Frameworks */,
+				FB4A646FD7504246A501EDBD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +182,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C5332DCD48A8BA5038F3033 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E72A1815C3D363AC40AEA1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokemonDeck/Pods-PokemonDeck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB4A646FD7504246A501EDBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokemonDeck/Pods-PokemonDeck-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		176F2F831EF5B339007E7A14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				176F2F8D1EF5B33A007E7A14 /* ViewController.swift in Sources */,
+				176F2F8D1EF5B33A007E7A14 /* MainViewController.swift in Sources */,
 				176F2F8B1EF5B33A007E7A14 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +359,7 @@
 		};
 		176F2F9A1EF5B33A007E7A14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4323A9A53ED6C32D88B3AB /* Pods-PokemonDeck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PokemonDeck/Info.plist;
@@ -272,6 +372,7 @@
 		};
 		176F2F9B1EF5B33A007E7A14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71EA4A7628354BB3700318A1 /* Pods-PokemonDeck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PokemonDeck/Info.plist;
@@ -301,6 +402,7 @@
 				176F2F9B1EF5B33A007E7A14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
