@@ -39,7 +39,8 @@
                                 <rect key="frame" x="0.0" y="109" width="320" height="459"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KXp-0S-qTC">
-                                <rect key="frame" x="20" y="129" width="280" height="419"/>
+                                <rect key="frame" x="10" y="119" width="300" height="439"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uWq-nH-ADL">
                                     <size key="itemSize" width="105" height="105"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -47,14 +48,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pHj-NX-kPA">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pokemonCell" id="pHj-NX-kPA" customClass="PokemonCollectionViewCell" customModule="PokemonDeck" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="Fye-tu-c5G">
+                                                <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="Fye-tu-c5G">
                                                     <rect key="frame" x="0.0" y="0.0" width="105" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="ybZ-Za-jjl"/>
@@ -79,6 +80,10 @@
                                             <constraint firstAttribute="trailing" secondItem="Fye-tu-c5G" secondAttribute="trailing" id="wXj-u0-JkI"/>
                                             <constraint firstItem="Fye-tu-c5G" firstAttribute="top" secondItem="pHj-NX-kPA" secondAttribute="top" id="wyH-za-Ahx"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="pokemonImageViewOutlet" destination="Fye-tu-c5G" id="Rqg-Vr-d4S"/>
+                                            <outlet property="pokemonNameLabelOutlet" destination="pDI-JB-ytA" id="GO7-Hd-62m"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -89,18 +94,21 @@
                             <constraint firstItem="SOu-h3-BDo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IsK-Hs-dyj"/>
                             <constraint firstItem="wCv-td-rmW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="S8A-86-i84"/>
                             <constraint firstAttribute="trailing" secondItem="SOu-h3-BDo" secondAttribute="trailing" id="THe-Z9-q5s"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KXp-0S-qTC" secondAttribute="bottom" constant="20" id="UBd-dI-98r"/>
-                            <constraint firstItem="KXp-0S-qTC" firstAttribute="top" secondItem="gwx-c9-W1o" secondAttribute="bottom" constant="20" id="Xwf-9F-ts1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KXp-0S-qTC" secondAttribute="bottom" constant="10" id="UBd-dI-98r"/>
+                            <constraint firstItem="KXp-0S-qTC" firstAttribute="top" secondItem="gwx-c9-W1o" secondAttribute="bottom" constant="10" id="Xwf-9F-ts1"/>
                             <constraint firstAttribute="trailing" secondItem="gwx-c9-W1o" secondAttribute="trailing" id="YmG-22-gCq"/>
                             <constraint firstAttribute="trailing" secondItem="wCv-td-rmW" secondAttribute="trailing" id="Yz9-r4-iBJ"/>
                             <constraint firstItem="gwx-c9-W1o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dch-Eo-XyM"/>
                             <constraint firstItem="wCv-td-rmW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gux-mP-jT7"/>
                             <constraint firstItem="SOu-h3-BDo" firstAttribute="top" secondItem="gwx-c9-W1o" secondAttribute="bottom" id="k8o-kG-Z1t"/>
                             <constraint firstItem="gwx-c9-W1o" firstAttribute="top" secondItem="wCv-td-rmW" secondAttribute="bottom" id="nyN-Et-z7t"/>
-                            <constraint firstAttribute="trailing" secondItem="KXp-0S-qTC" secondAttribute="trailing" constant="20" id="urT-Qn-I6Y"/>
-                            <constraint firstItem="KXp-0S-qTC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="xxW-Zt-qkl"/>
+                            <constraint firstAttribute="trailing" secondItem="KXp-0S-qTC" secondAttribute="trailing" constant="10" id="urT-Qn-I6Y"/>
+                            <constraint firstItem="KXp-0S-qTC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="xxW-Zt-qkl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pokemonCollectionViewOutlet" destination="KXp-0S-qTC" id="1cQ-HF-daI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,8 +12,8 @@ import Foundation
 class Pokemon{
     
     //Pokemon class member variables
-    private var _pokemonName: String!
-    private var _pokedexId: Int!
+    fileprivate var _pokemonName: String!
+    fileprivate var _pokedexId: Int!
     
     //Getter and Setter
     var pokemonName: String{
